@@ -1,4 +1,3 @@
-// src/app.js
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
@@ -9,26 +8,18 @@ const app = express();
 // Connect to database
 connectDB();
 
-// Middleware
-app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'https://funny-lolly-1a3a84.netlify.app'
-  ],
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: [
-    'Content-Type', 
-    'Authorization', 
-    'X-Requested-With',
-    'Accept',
-    'Origin'
-  ],
-  exposedHeaders: ['Content-Range', 'X-Content-Range']
-}));
-
-// Pre-flight
-app.options('*', cors());
+// CORS Middleware
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://funny-lolly-1a3a84.netlify.app');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  res.header('Access-Control-Allow-Credentials', true);
+  
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+  next();
+});
 
 app.use(express.json());
 

@@ -10,14 +10,8 @@ connectDB();
 
 // CORS Middleware
 app.use((req, res, next) => {
-  const allowedOrigins = [
-    'https://funny-lolly-1a3a84.netlify.app',
-    'https://673764982072aee153838d8f--funny-lolly-1a3a84.netlify.app',
-    'http://localhost:5173'
-  ];
-
   const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin)) {
+  if (origin && origin.match(/https:\/\/.*funny-lolly-1a3a84\.netlify\.app$/)) {
     res.header('Access-Control-Allow-Origin', origin);
   }
 

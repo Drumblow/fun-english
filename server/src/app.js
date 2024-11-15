@@ -10,7 +10,17 @@ connectDB();
 
 // CORS Middleware
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://funny-lolly-1a3a84.netlify.app');
+  const allowedOrigins = [
+    'https://funny-lolly-1a3a84.netlify.app',
+    'https://673764982072aee153838d8f--funny-lolly-1a3a84.netlify.app',
+    'http://localhost:5173'
+  ];
+
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.header('Access-Control-Allow-Origin', origin);
+  }
+
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
   res.header('Access-Control-Allow-Credentials', true);

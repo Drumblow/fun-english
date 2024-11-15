@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://fun-english-backend.onrender.com/api',
+  baseURL: 'https://fun-english.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },

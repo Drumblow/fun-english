@@ -1,4 +1,3 @@
-// src/pages/teacher/TeacherDashboard.jsx
 import React from 'react';
 import { 
   Container, 

@@ -1,4 +1,3 @@
-// src/middleware/checkRole.js
 const checkRole = (roles) => {
     return (req, res, next) => {
       if (!roles.includes(req.user.role)) {

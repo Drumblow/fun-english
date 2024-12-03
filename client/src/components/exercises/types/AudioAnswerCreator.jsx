@@ -1,4 +1,3 @@
-// src/components/exercises/types/AudioAnswerCreator.jsx
 import React from 'react';
 import {
   Box,

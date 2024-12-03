@@ -1,4 +1,3 @@
-// src/components/navigation/TeacherRoute.jsx
 import { Navigate, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 

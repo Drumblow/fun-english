@@ -1,4 +1,3 @@
-// src/components/exercises/types/WordOrderCreator.jsx
 import React from 'react';
 import {
   Box,
@@ -27,7 +26,7 @@ const WordOrderCreator = ({ content, onChange }) => {
       onChange({
         ...content,
         words: newWords,
-        correctOrder: [...newWords] // Initially, correct order matches input order
+        correctOrder: [...newWords] 
       });
       setNewWord('');
     }

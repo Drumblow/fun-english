@@ -1,4 +1,3 @@
-// src/controllers/lessonController.js
 const Lesson = require('../models/Lesson');
 const Exercise = require('../models/Exercise');
 

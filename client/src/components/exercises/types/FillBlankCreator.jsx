@@ -1,4 +1,3 @@
-// src/components/exercises/types/FillBlankCreator.jsx
 import React from 'react';
 import {
   Box,

@@ -1,4 +1,3 @@
-// server/src/models/index.js
 const mongoose = require('mongoose');
 
 // Import all models

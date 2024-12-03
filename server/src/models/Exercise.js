@@ -1,4 +1,3 @@
-// src/models/Exercise.js
 const mongoose = require('mongoose');
 
 const exerciseSchema = new mongoose.Schema({

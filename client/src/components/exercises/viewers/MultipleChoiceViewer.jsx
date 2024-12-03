@@ -1,4 +1,3 @@
-// src/components/exercises/viewers/MultipleChoiceViewer.jsx
 import React from 'react';
 import {
   Box,

@@ -1,4 +1,3 @@
-// src/components/navigation/PrivateRoute.jsx
 import { Navigate, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 

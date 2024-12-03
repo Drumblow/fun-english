@@ -1,4 +1,3 @@
-// src/components/exercises/types/MatchingCreator.jsx
 import React from 'react';
 import {
   Box,

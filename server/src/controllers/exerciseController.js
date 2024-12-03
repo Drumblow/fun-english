@@ -1,6 +1,3 @@
-// src/controllers/exerciseController.js
-
-// Adicionar as importações necessárias
 const Exercise = require('../models/Exercise');
 const Progress = require('../models/Progress');
 const User = require('../models/User');

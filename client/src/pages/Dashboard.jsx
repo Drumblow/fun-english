@@ -1,4 +1,3 @@
-// src/pages/Dashboard.jsx
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { 
@@ -27,7 +26,7 @@ import {
 const Dashboard = () => {
   const { user } = useSelector((state) => state.auth);
 
-  // Dados mockados para exemplo (substitua por dados reais da API)
+  // Dados mockados para exemplo (substituir por dados reais da API)
   const progressData = {
     level: 'Intermediate',
     xp: 2500,
